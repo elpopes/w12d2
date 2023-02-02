@@ -1,4 +1,4 @@
-import { csrfFetch } from "./csrf";
+import csrfFetch from "./csrf";
 
 export const SET_SESSION_USER = "SET_SESSION_USER";
 export const REMOVE_SESSION_USER = "REMOVE_SESSION_USER";
