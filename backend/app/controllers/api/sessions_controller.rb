@@ -9,8 +9,8 @@ class Api::SessionsController < ApplicationController
   end
 
   def create
-    username = params[:credential]
-    password = params[:password]
+    username = params[:credential][:credential]
+    password = params[:credential][:password]
     @user = User.find_by_credentials(username, password)
 
     if @user
